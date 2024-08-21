@@ -48,7 +48,7 @@ $result = mysqli_query($conn, $query);
         ?>
         <tr>
             <td><?= $row["id"]; ?></td>
-            <td><?= htmlspecialchars($row["url"]); ?></td>
+            <td><a href="<?=($row["url"]); ?>"><?=($row["url"]); ?></a></td>
             <td><?= htmlspecialchars($row["title"]); ?></td>
             <td><?= htmlspecialchars($row["description"]); ?></td>
         </tr>
